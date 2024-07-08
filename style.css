@@ -7,8 +7,8 @@ coloque nas sessões indicadas*/
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+   --cor-de-fundo: #F2E6D8;
+   --cor-de-link: #59463f;
 }
 
 body {
@@ -42,91 +42,332 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 section.menu{
+width: auto;
+padding: 32px 42px 32px 42px;
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+}
 
+
+.tudo{
+    width:auto ;
+    height: 88px;
+    position: center;
+    margin: auto;
+   
+}
+
+/*titulo pagina*/
+.menu__header {
+    display: flex;
+    align-items: center;
+  
+}
+
+.menu__header img{
+    width:24px;
+    height: 24px;
+    margin-right: 15px;
+}
+/*lista*/
+.menu{
+    list-style-type: none;
+    padding: 10;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.menu__list{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+}
+
+.menu__list li{
+    margin-right: 20px;
+}
+
+.menu__list__item__contato{
+    font-weight: bold;
 }
 
 /*Sección Title*/
 
-section.title{
 
+.title__div{
+    width: auto;
+    height: 368px;
+    padding: 32px 64px 32px 64px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.title__profile{
+    height: 368px;
+    border-radius: 368px;
+    padding: 45px;
+}
+
+.title__container{
+    width: 751px;
+    height: 246px;
+    margin: 24px;
+}
+
+.title__bio{
+    font-size: 52px;
+}
+
+.title__subsection{
+    font-size: 22px;
+    font-weight: lighter;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.title__network{
+    
+    font-size: 16px;
+    font-weight: medium;
+    width: 467px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 /*Sección About*/
 
-section.about{
-
+.about{
+    background-color: #f2cdc4;
+    width: 1440px; ;
+    height: auto;
+    width: 100%; /* Ancho del texto al 100% */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
 }
+.about__container{
+    font-size: 16px;
+    padding: 64px;
+    width: 751px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    font-weight: lighter;
+}
+
+/*seccion Skills*/
+
+.skills{
+    padding: 64PX;
+}
+.skills__title{
+    text-align: center;
+    padding-bottom: 32PX;
+}
+
+.skills__line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.skills__box{
+    display: flex;
+    background-color: white;
+    width: 176px;
+    height: 174px;
+   justify-content: flex-start;
+   align-items: flex-end;
+}
+
+.skills__name{
+    align-self: flex-end;
+}
+
 
 /*Sección Hobbies*/
 
-section.hobbies{
-    
+.hobbies{
+    padding: 64PX;
 }
+ 
+.hobbies__title{
+    text-align: center;
+    padding-bottom: 32PX;
+}
+
+.hobbies__line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.hobbies__box{
+    display: flex;
+    background-color: white;
+    width: 176px;
+    height: 174px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.hobbies__name{
+    align-self: flex-end;
+}
+
 
 /* Experiencia Académica*/
 
 section.academic{
+background-color: #f2cdc4;
+}
 
+.academic{
+    padding: 64PX;
+}
+ 
+.academic__title{
+    text-align: center;
+    padding-bottom: 32PX;
+}
+
+.academic__courses{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.academic__courses__item__img{
+    display: flex;
+    background-color: white;
+    width: 368px;
+    height: 286px;
+    justify-content: center;
+    align-items: center;
+}
+
+.academic__courses__item__title{
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.academic__courses__item__subtitle{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* experiencia*/
 
-section.experience{
+.experience__section__title{
+    text-align: center;
+}
+
+.experience__text{
+    font-weight: lighter;
+}
+
+.experiencie__box{
+    display: flex;
+    padding: 32px;
+    width: 1136px;
+    height: 406px;
+    padding-bottom: 64px ;
+    justify-content: center;
+    align-items: center;
+}
+.experience__img{
+    width: 50%;
+}
+.experience__info{
+    padding-left: 16px;
+}
+
+.experience__info-container{
+    padding-left: 16px;
+}
+
+.experiencia__botao--repo {
+    display: inline-block; /* Hace que el botón se comporte como un elemento de bloque, pero aún respetando el flujo del texto */
+    padding: 10px 10px; /* Espaciado interno del botón */
+    background-color: white; /* Color de fondo del botón */
+    color: #2A7AE4; /* Color del texto del botón */
+    border: 1px solid #2A7AE4; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.experience__botao--demo{
+    display: inline-block; /* Hace que el botón se comporte como un elemento de bloque, pero aún respetando el flujo del texto */
+    padding: 10px 10px; /* Espaciado interno del botón */
+    background-color: #2A7AE4; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: 1px solid #2A7AE4; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+
+/*Contacto*/
+.formcontato{
+    background-color: #f2cdc4;
+    padding:64px;
+}
+
+.formcontato__contacto{
+    display: flex;
+    align-items:center;
+}
+
+.formcontato__subtext{
+    font-size: 16px;
+    font-weight: lighter;
+}
+.formcontato--esquerda{
+    padding-right: 16px;
+}
+
+.formcontato__img{
+    width: 464px;
+    height: 593px;
+}
+
+.formcontato__text{
+    width: 464px;
+    height: 593px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formcontato__input{
+    padding-top: 32px;
+    width: 656px;
+    padding: 7px;
+    margin-bottom: 32px;
+
+}
+.formcontato__textarea{
+    width: 656px;
+    padding: 7px;
+    margin-bottom: 32px;
 
 }
 
-/*Contacto*/
-
-section.formcontato{
-
+.formcontato__botao{
+    display: inline-block; /* Hace que el botón se comporte como un elemento de bloque, pero aún respetando el flujo del texto */
+    padding: 10px 10px; /* Espaciado interno del botón */
+    background-color: #2A7AE4; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: 1px solid #2A7AE4; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
 /*footeer*/
 
-section.footer{
-   
+.footer__rodape{
+    text-align: center;
+    background-color: white;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
-/* Vamos a desafiarnos trabajando con responsividad?
-Utiliza las referencias de los breakpoints @media abajo */
-
-
-/*Tablet*/
-@media (min-width: 768px) {
-
-/* Menú */
-
-/*title*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
-}
-
-/*Mobile*/
-@media (min-width: 425px) {
-
-/*Menu*/
-
-/*Titulo*/
-
-/*Sección sobre mi*/
-
-/*Skills*/
-
-/*Hobbies*/
- 
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
- /*Contacto*/
-
-/*Footer*/
-
-}
